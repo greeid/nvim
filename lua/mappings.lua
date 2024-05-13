@@ -1,6 +1,5 @@
 require "nvchad.mappings"
 -- add yours here
-
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
@@ -26,6 +25,7 @@ map({ "n", "v", "i", "t" }, "<C-b>", function()
         rust = "cargo " .. file,
         python = "python3 " .. file,
         javascript = "node " .. file,
+        java = "javac " .. file .. " && java " .. sfile,
         go = "go build && go run " .. file,
         c = "g++ " .. file .. " -o " .. sfile .. " && ./" .. sfile,
         cpp = "g++ " .. file .. " -o " .. sfile .. " && ./" .. sfile,

@@ -14,7 +14,7 @@ M.ui = {
   statusline = {
     theme = "vscode_colored",
     separator_style = "round",
-    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cursor", "cwd" },
+    -- order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cursor", "cwd" },
   },
 
   nvdash = {
