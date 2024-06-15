@@ -11,7 +11,10 @@ map({ "n", "v" }, "<", "<gv", { desc = "Move indent left once" })
 map({ "n", "v" }, ">", ">gv", { desc = "Move indent left once" })
 map({ "n", "v", "t", "x" }, "<A-,>", "<C-w><", { desc = "Move indent left once" })
 map({ "n", "v", "t", "x" }, "<A-.>", "<C-w>>", { desc = "Move indent left once" })
-map({ "n", "v" }, "<leader>fl", "<cmd>Telescope flutter commands<CR>", { desc = "Move indent left once" })
+map({ "n", "v" }, "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR> ", { desc = "Move to left pane" })
+map({ "n", "v" }, "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR> ", { desc = "Move to down pane" })
+map({ "n", "v" }, "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>   ", { desc = "Move to up pane" })
+map({ "n", "v" }, "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { desc = "Move to right pane" })
 
 map({ "n", "v", "i", "t" }, "<C-b>", function()
   require("nvchad.term").runner {
