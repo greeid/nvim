@@ -36,6 +36,7 @@ dofile(vim.g.base46_cache .. "treesitter")
 
 require "nvchad.autocmds"
 require "autocmds"
+require "usrcmds"
 
 vim.schedule(function()
   require "mappings"
